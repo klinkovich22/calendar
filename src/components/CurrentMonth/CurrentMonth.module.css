@@ -1,0 +1,116 @@
+.current-month{
+  box-sizing: border-box;
+  height: 55vh;
+  width: 50vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+
+.container-month{
+  box-sizing: inherit;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.month-name{
+  margin-bottom: 60px;
+  color: #00978d;
+  /* font-family: "PT Sans Narrow", sans-serif; */
+  font-size: 30px;
+  font-weight: 700;
+  font-style: normal;
+  text-transform: uppercase;
+}
+
+.day-of-week{
+  color: red;
+  box-sizing: border-box;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  border: white solid 1px;
+
+}
+
+.calendar-place{
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  padding: 0 40px;
+}
+
+.table{
+  width: 100%
+}
+
+.row{
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+
+.pointer{
+  background-color: white;
+  color: #00978d;
+  text-align: center;
+  border: #00978d solid 3px;
+  border-radius: 50%;
+  padding: 7px;
+}
+
+.pointer:hover{
+  background-color: #00978d;
+  color: white;
+}
+
+
+  
+@media (max-width: 576px){
+  .current-month{
+    height: 50vh;
+    width: 95vw;
+    background-color: white;
+  }
+  .container-month{
+    padding: 0;
+  }
+  .month-name{
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+}
+
+@media (min-width: 925px) and (max-width: 1280px){
+  .current-month{
+    height: 75vh;
+    width: 90vw;
+    background-color: white;
+  }
+  .month-name{
+    margin-bottom: 20px;
+  }
+  /* .day-of-week{
+    width: 40px;
+    height: 40px;  
+    font-size: 30px;
+  } */
+}
+
+
+@media (min-width: 1280px) {
+  .current-month{
+    height: 55vh;
+    width: 50vw;
+      background-color: white;
+  }
+}
