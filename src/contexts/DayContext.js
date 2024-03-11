@@ -1,5 +1,5 @@
 import React from "react";
 
-const ThemeContextObj = React.createContext();
+const DayContextObj = React.createContext();
 
-export default ThemeContextObj;
+export default DayContextObj;
